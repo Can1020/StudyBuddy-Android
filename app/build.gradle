@@ -28,4 +28,7 @@ dependencies {
     implementation libs.firebase.auth
     implementation libs.firebase.firestore
     implementation libs.firebase.database
+    implementation libs.recyclerview
+    implementation libs.cardview
+    implementation libs.material
 }
