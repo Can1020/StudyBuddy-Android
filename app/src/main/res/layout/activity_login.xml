@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/studybuddy_background">
 
     <TextView
         android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                 android:id="@+id/passwordToggle"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:contentDescription="Toggle password visibility"
+                android:contentDescription="@string/toggle_password_visibility"
                 android:src="@drawable/ic_eye_open"
                 android:layout_alignEnd="@+id/passwordInput"
                 android:layout_centerVertical="true"
