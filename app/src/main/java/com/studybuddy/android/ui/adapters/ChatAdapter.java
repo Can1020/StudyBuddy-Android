@@ -1,3 +1,7 @@
+
+// Adapter für die Chatliste
+// Erstellt und verwaltet die Darstellung der einzelnen Chat-Elemente in der RecyclerView
+
 package com.studybuddy.android.ui.adapters;
 
 import android.content.Context;
@@ -32,6 +36,10 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         View view = LayoutInflater.from(context).inflate(R.layout.item_chat, parent, false);
         return new ChatViewHolder(view);
     }
+
+    // Setzt den Namen des Chatpartners und zeigt die letzte Nachricht an
+    // Falls keine Nachricht existiert, wird "Keine Nachrichten" angezeigt
+    // Beim Klick auf ein Chat-Element wird die ChatRoomActivity geöffnet
 
     @Override
     public void onBindViewHolder(@NonNull ChatViewHolder holder, int position) {

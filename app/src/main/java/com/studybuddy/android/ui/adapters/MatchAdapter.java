@@ -1,3 +1,6 @@
+// Adapter für die Matches
+// Erstellt und verwaltet die Darstellung der potenziellen Matches in der RecyclerView
+
 package com.studybuddy.android.ui.adapters;
 
 import android.view.LayoutInflater;
@@ -38,6 +41,8 @@ public class MatchAdapter extends RecyclerView.Adapter<MatchAdapter.MatchViewHol
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.match_item, parent, false);
         return new MatchViewHolder(view);
     }
+
+    // Ermöglicht das Klicken auf ein Match, um einen Chat zu starten
 
     @Override
     public void onBindViewHolder(@NonNull MatchViewHolder holder, int position) {

@@ -1,3 +1,6 @@
+// ChatRoomActivity - Einzelchat-Ansicht
+// Diese Klasse verwaltet die Kommunikation zwischen zwei Benutzern in einem Chat
+
 package com.studybuddy.android.ui.activities;
 
 import android.os.Bundle;
@@ -103,6 +106,8 @@ public class ChatRoomActivity extends AppCompatActivity {
                 .addOnFailureListener(e -> Log.e("ChatRoomActivity", "Error fetching chat partner: ", e));
     }
 
+// Sendet eine Nachricht an Firestore und aktualisiert die letzte Nachricht des Chats
+// Falls das Senden fehlschlägt, wird eine Fehlermeldung ausgegeben
 
     private void sendMessage(String messageText) {
         if (chatPartnerId == null) {
@@ -129,7 +134,8 @@ public class ChatRoomActivity extends AppCompatActivity {
 
 
 
-
+// Lädt alle Nachrichten des aktuellen Chats aus Firestore
+// Aktualisiert die RecyclerView, um neue Nachrichten anzuzeigen
 
     private void fetchMessages() {
         if (chatId == null) {

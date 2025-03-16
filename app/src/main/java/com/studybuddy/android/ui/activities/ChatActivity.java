@@ -1,3 +1,5 @@
+// ChatActivity - Hauptklasse für die Chat-Übersicht
+// Zeigt die aktiven Chats des Benutzers und ermöglicht den Zugriff auf Chatrooms.
 package com.studybuddy.android.ui.activities;
 
 import android.content.Intent;
@@ -75,6 +77,7 @@ public class ChatActivity extends AppCompatActivity {
         });
     }
 
+    // Lädt alle Matches des aktuellen Benutzers aus Firestore
     private void loadMatches() {
         String userId = auth.getCurrentUser().getUid();
         Log.d("Firestore", "Fetching matches for user: " + userId);
@@ -104,7 +107,7 @@ public class ChatActivity extends AppCompatActivity {
                 });
     }
 
-
+    // Lädt alle Chats des aktuellen Benutzers aus Firestore
     private void loadChats() {
         String userId = auth.getCurrentUser().getUid();
         Log.d("Firestore", "Fetching chats for user: " + userId);
