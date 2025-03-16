@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- StudyBuddy Logo -->
+        <ImageView
+            android:id="@+id/chatLogo"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/studybuddy_logo"
+            />
+
+        <!-- Matches Section -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/matchesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/chatLogo"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <!-- Chats Section -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/matchesRecyclerView"
+            android:layout_above="@id/bottomNavigationView"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Bottom Navigation (Identical to HomeActivity) -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:itemIconTint="@color/bottom_nav_icon_color"
+            app:itemTextColor="@color/bottom_nav_icon_color"
+            app:menu="@menu/bottom_nav_menu"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

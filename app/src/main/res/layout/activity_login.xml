@@ -10,7 +10,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome,"
+        android:layout_marginTop="50dp"
+        android:text="@string/welcome"
         android:textColor="@color/studybuddy"
         android:textSize="45sp"
         android:textStyle="bold"/>
@@ -18,7 +19,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login to start with StudyBuddy 🎓"
+        android:text="@string/login_to_start_with_studybuddy"
         android:textSize="24sp"
         android:layout_marginTop="10dp"
         android:textColor="@android:color/black"/>
@@ -30,7 +31,7 @@
         android:text="@string/university_email"
         android:textSize="14sp"
         android:layout_marginBottom="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         />
 
     <EditText
@@ -51,7 +52,7 @@
         android:text="@string/password"
         android:textSize="14sp"
         android:layout_marginBottom="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         />
 
         <RelativeLayout
@@ -69,19 +70,7 @@
                 android:inputType="textPassword"
                 android:background="@drawable/input_field_background"
                 android:padding="12dp"
-                android:paddingEnd="50dp"
                 android:layout_gravity="center"/>
-
-            <ImageView
-                android:id="@+id/passwordToggle"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="@string/toggle_password_visibility"
-                android:src="@drawable/ic_eye_open"
-                android:layout_alignEnd="@+id/passwordInput"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="16dp"
-                android:padding="4dp"/>
         </RelativeLayout>
 
         <Button
@@ -90,7 +79,7 @@
         android:layout_height="wrap_content"
         android:text="@string/log_in"
         android:textColor="@android:color/white"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/studybuddy"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:textAlignment="center"

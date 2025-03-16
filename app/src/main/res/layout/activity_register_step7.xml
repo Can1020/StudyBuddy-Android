@@ -19,75 +19,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Great! Create your password"
+        android:text="What skills and Interests do you have?"
         android:textSize="25sp"
         android:textStyle="italic"
         android:layout_marginTop="3dp"
         android:textColor="@android:color/black"
         android:layout_gravity="center"/>
 
-    <RelativeLayout
+    <EditText
+        android:id="@+id/skillsInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <EditText
-            android:id="@+id/passwordInput"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="50dp"
-            android:autofillHints="password"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:background="@drawable/input_field_background"
-            android:padding="12dp"
-            android:paddingEnd="50dp"
-            android:layout_gravity="center"/>
-
-        <ImageView
-            android:id="@+id/passwordToggle"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:contentDescription="@string/toggle_password_visibility"
-            android:src="@drawable/ic_eye_open"
-            android:layout_alignEnd="@+id/passwordInput"
-            android:layout_marginTop="65dp"
-            android:layout_marginEnd="16dp"
-            android:padding="4dp"/>
-
-        <EditText
-            android:id="@+id/passwordConfirmInput"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="150dp"
-            android:autofillHints="password"
-            android:hint="@string/confirm_password"
-            android:inputType="textPassword"
-            android:background="@drawable/input_field_background"
-            android:padding="12dp"
-            android:paddingEnd="50dp"
-            android:layout_gravity="center"/>
-
-        <ImageView
-            android:id="@+id/passwordToggleConfirm"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignEnd="@+id/passwordInput"
-            android:layout_marginTop="165dp"
-            android:layout_gravity="right"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="@string/toggle_password_visibility"
-            android:padding="4dp"
-            android:src="@drawable/ic_eye_open" />
-    </RelativeLayout>
+        android:layout_marginTop="50dp"
+        android:autofillHints="skills"
+        android:background="@drawable/input_field_background"
+        android:hint="Marketing, Design, Programming"
+        android:inputType="textShortMessage"
+        android:padding="12dp" />
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/progressIndicator"
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_marginTop="16dp"
-        android:progress="20"
+        android:progress="66"
         android:max="100"
         style="@style/Widget.MaterialComponents.LinearProgressIndicator"
         app:trackColor="@color/gray"

@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_marginTop="16dp"
-        android:progress="20"
+        android:progress="0"
         android:max="100"
         style="@style/Widget.MaterialComponents.LinearProgressIndicator"
         app:trackColor="@color/gray"
@@ -56,4 +56,5 @@
         android:layout_gravity="right"
         android:contentDescription="@string/next"
         android:src="@drawable/next_arrow" />
+
 </LinearLayout>

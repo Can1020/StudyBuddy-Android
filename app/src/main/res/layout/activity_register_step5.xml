@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What skills and Interests do you have?"
+        android:text="enter your Course study"
         android:textSize="25sp"
         android:textStyle="italic"
         android:layout_marginTop="3dp"
@@ -27,14 +27,14 @@
         android:layout_gravity="center"/>
 
     <EditText
-        android:id="@+id/nameInput"
+        android:id="@+id/courseInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:autofillHints="skills"
+        android:autofillHints="course"
         android:background="@drawable/input_field_background"
-        android:hint="Marketing, Design, Programming"
-        android:inputType="textPersonName"
+        android:hint="Business Informatics"
+        android:inputType="textShortMessage"
         android:padding="12dp" />
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_marginTop="16dp"
-        android:progress="20"
+        android:progress="44"
         android:max="100"
         style="@style/Widget.MaterialComponents.LinearProgressIndicator"
         app:trackColor="@color/gray"

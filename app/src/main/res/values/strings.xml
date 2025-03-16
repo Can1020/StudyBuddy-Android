@@ -3,10 +3,13 @@
     <string name="university_email">University Email</string>
     <string name="password">Password</string>
     <string name="log_in">LOG IN</string>
-    <string name="register_text">Don&apos;t have an account? <font color="#3B73F2"><b>REGISTER</b></font></string>
+    <string name="register_text">Don\'t have an account? <font color="#3B73F2"><b>REGISTER</b></font></string>
     <string name="toggle_password_visibility">Toggle password visibility</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="next">Next</string>
     <string name="back">Back</string>
+    <string name="logo">logo</string>
+    <string name="login_to_start_with_studybuddy">login to start with StudyBuddy 🎓</string>
+    <string name="welcome">Welcome,</string>
 
 </resources>

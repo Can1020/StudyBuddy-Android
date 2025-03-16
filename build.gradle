@@ -3,10 +3,11 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
     dependencies {
-        classpath libs.gradle
-        classpath libs.google.services
+        classpath 'com.android.tools.build:gradle:8.6.0'
+        classpath "com.google.gms:google-services:4.4.0"
     }
 }
 
@@ -15,8 +16,4 @@ allprojects {
         google()
         mavenCentral()
     }
-}
-
-tasks.register('clean', Delete) {
-    delete rootProject.getBuildFile()
 }
